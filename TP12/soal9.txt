@@ -1,0 +1,21 @@
+procedure Shaggy(tab : array[1..N] of Trec, n : integer) 
+kamus  
+  i :integer 
+  found1,found2,found :Boolean 
+algoritma  
+  found = false 
+  i = 2 
+  while i < n and not found do  
+    found1 = (tab[i-1].v1 == tab[i].vx.v2) 
+    found2 = (tab[i].vx.v3 == tab[i].v4) 
+    found = found1 and found2 
+    i = i + 1 
+  endwhile  
+  if found then 
+    output(“Ada Shaggy disana. Yaitu …?”) 
+  endif  
+endprocedure
+
+jawab:
+prosedur ini berfungsi untuk mencari apakah field v1 dari trec di dalam array index sama 
+dengan field v2 dari trec dalam index selanjutnya di array dan mencari apakah v3 sama dengan v4.
